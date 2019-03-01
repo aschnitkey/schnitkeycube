@@ -1,0 +1,84 @@
+html {
+  font-family: 'Indie Flower', cursive;
+  background-color: #454545;
+  color: #fff; }
+
+h1 {
+  margin: auto;
+  text-align: center;
+  font-size: 3em; }
+
+.container {
+  height: 300px;
+  width: 300px;
+  margin: 125px auto;
+  text-align: center;
+  -webkit-perspective: 1000px;
+  perspective: 1000px; }
+  .container .cube {
+    height: 100%;
+    width: 100%;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    position: relative;
+    -webkit-animation: cubespin 12s linear infinite;
+    animation: cubespin 12s linear infinite; }
+    .container .cube .side {
+      height: 300px;
+      width: 300px;
+      border: 2px solid #fff;
+      font-size: 2em;
+      line-height: 300px;
+      position: absolute; }
+    .container .cube .side1 {
+      background-color: rgba(255, 227, 71, 0.9);
+      background-image: url(../img/brynn.jpg);
+      background-size: cover;
+      -webkit-transform: rotateY(180deg) translateZ(150px);
+      transform: rotateY(180deg) translateZ(150px); }
+    .container .cube .side2 {
+      background-color: rgba(253, 21, 27, 0.9);
+      background-image: url(../img/rhett.jpg);
+      background-size: cover;
+      -webkit-transform: rotateX(-90deg) translateZ(150px);
+      transform: rotateX(-90deg) translateZ(150px); }
+    .container .cube .side3 {
+      background-color: rgba(188, 141, 167, 0.9);
+      background-image: url(../img/renee.jpg);
+      background-size: cover;
+      -webkit-transform: rotateY(0) translateZ(150px);
+      transform: rotateY(0) translateZ(150px); }
+    .container .cube .side4 {
+      background-color: rgba(180, 237, 210, 0.9);
+      background-image: url(../img/brentley.jpg);
+      background-size: cover;
+      -webkit-transform: rotateX(90deg) translateZ(150px);
+      transform: rotateX(90deg) translateZ(150px); }
+    .container .cube .side5 {
+      background-color: rgba(18, 78, 120, 0.9);
+      background-image: url(../img/grayson.jpg);
+      background-size: cover;
+      -webkit-transform: rotateY(90deg) translateZ(150px);
+      transform: rotateY(90deg) translateZ(150px); }
+    .container .cube .side6 {
+      background-color: rgba(215, 78, 9, 0.9);
+      background-image: url(../img/parents.jpg);
+      background-size: cover;
+      -webkit-transform: rotateY(-90deg) translateZ(150px);
+      transform: rotateY(-90deg) translateZ(150px); }
+
+@-webkit-keyframes cubespin {
+  0% {
+    -webkit-transform: rotateX(0) rotateY(0);
+    transform: rotateX(0) rotateY(0); }
+  100% {
+    -webkit-transform: rotateX(720deg) rotateY(360deg);
+    transform: rotateX(720deg) rotateY(360deg); } }
+
+@keyframes cubespin {
+  0% {
+    -webkit-transform: rotateX(0) rotateY(0);
+    transform: rotateX(0) rotateY(0); }
+  100% {
+    -webkit-transform: rotateX(720deg) rotateY(360deg);
+    transform: rotateX(720deg) rotateY(360deg); } }
